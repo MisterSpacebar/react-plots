@@ -1,3 +1,169 @@
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #1e1e2e;
+  border-bottom: 1px solid #313244;
+}
+
+.site-nav a {
+  color: #cdd6f4;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  background: #313244;
+  color: #cba6f7;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home h1 {
+  margin-bottom: 0.5rem;
+}
+
+.library-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lib-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.25rem;
+  background: #1e1e2e;
+  border: 1px solid #313244;
+  border-radius: 8px;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+
+.lib-card:hover {
+  border-color: #cba6f7;
+}
+
+.lib-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #cba6f7;
+  text-decoration: none;
+}
+
+.lib-name:hover {
+  text-decoration: underline;
+}
+
+.lib-summary {
+  font-size: 0.875rem;
+  color: #a6adc8;
+  margin-top: 0.4rem;
+  line-height: 1.55;
+}
+
+.lib-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.lib-meta-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+}
+
+.lib-meta-label.strengths {
+  color: #34d399;
+}
+
+.lib-meta-label.limitations {
+  color: #f87171;
+}
+
+.lib-meta-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  list-style: disc;
+}
+
+.lib-meta-list li {
+  margin-bottom: 0.15rem;
+}
+
+.chart-page h1 {
+  margin-bottom: 0.25rem;
+}
+
+.section-heading {
+  margin-top: 3rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+  color: #cba6f7;
+  border-bottom: 1px solid #313244;
+  padding-bottom: 0.4rem;
+}
+
+.section-desc {
+  font-size: 0.875rem;
+  color: #a6adc8;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.reset-btn {
+  margin-top: 0.75rem;
+  padding: 0.4rem 1rem;
+  background: #313244;
+  color: #cdd6f4;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.reset-btn:hover {
+  background: #45475a;
+}
+
+.chart-section {
+  margin-top: 2.5rem;
+}
+
+.radar-section,
+.polar-section {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.status {
+  padding: 2rem;
+  text-align: center;
+  color: #a6adc8;
+}
+
+.status.error {
+  color: #f38ba8;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

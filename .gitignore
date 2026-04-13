@@ -35,3 +35,8 @@ firestore-debug.log
 ui-debug.log
 database-debug.log
 .firebaserc
+
+# Service account credentials (contains private key -- never commit)
+serviceAccountKey.json
+*serviceaccount*.json
+*service-account*.json
